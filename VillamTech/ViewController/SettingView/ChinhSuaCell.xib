@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="307" id="KGk-i7-Jjw" customClass="ChinhSuaCell" customModule="VillamTech" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="307"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="307"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chọn vườn rau" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yMM-Og-bWD" customClass="DropDown" customModule="iOSDropDown">
+                        <rect key="frame" x="10" y="5" width="300" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="xrR-oh-rXa"/>
+                        </constraints>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên vườn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAL-ij-KtG">
+                        <rect key="frame" x="10" y="65" width="300" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="arL-jF-h67"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Địa chỉ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtG-eI-pmg">
+                        <rect key="frame" x="10" y="125" width="300" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="CjS-Lf-Nsh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo5-95-scC">
+                        <rect key="frame" x="110" y="185" width="100" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Cde-PR-5vp"/>
+                            <constraint firstAttribute="width" constant="100" id="IVb-n3-6dn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <state key="normal" title="Sửa"/>
+                        <connections>
+                            <action selector="updateGarden:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rIQ-lJ-uam"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DAL-ij-KtG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4vb-Ia-BfA"/>
+                    <constraint firstItem="Xo5-95-scC" firstAttribute="centerX" secondItem="dtG-eI-pmg" secondAttribute="centerX" id="Dws-6r-fvZ"/>
+                    <constraint firstAttribute="trailing" secondItem="yMM-Og-bWD" secondAttribute="trailing" constant="10" id="Fj1-Uq-NyY"/>
+                    <constraint firstItem="DAL-ij-KtG" firstAttribute="top" secondItem="yMM-Og-bWD" secondAttribute="bottom" constant="10" id="GlX-OM-hmx"/>
+                    <constraint firstAttribute="trailing" secondItem="dtG-eI-pmg" secondAttribute="trailing" constant="10" id="HdW-RI-JYX"/>
+                    <constraint firstItem="yMM-Og-bWD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ITv-Yg-OT3"/>
+                    <constraint firstAttribute="trailing" secondItem="DAL-ij-KtG" secondAttribute="trailing" constant="10" id="OIq-XL-Jo5"/>
+                    <constraint firstItem="dtG-eI-pmg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Q8R-yL-nol"/>
+                    <constraint firstItem="dtG-eI-pmg" firstAttribute="top" secondItem="DAL-ij-KtG" secondAttribute="bottom" constant="10" id="THq-nB-hRj"/>
+                    <constraint firstItem="Xo5-95-scC" firstAttribute="top" secondItem="dtG-eI-pmg" secondAttribute="bottom" constant="10" id="fiA-WD-T38"/>
+                    <constraint firstItem="yMM-Og-bWD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yKL-y3-JwL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressTf" destination="dtG-eI-pmg" id="YpW-lY-CQX"/>
+                <outlet property="fixBtn" destination="Xo5-95-scC" id="zQs-7e-TDD"/>
+                <outlet property="gardenTf" destination="yMM-Og-bWD" id="BRh-Jc-OSc"/>
+                <outlet property="nameGardenTf" destination="DAL-ij-KtG" id="CBt-vx-XN4"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="154.35267857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

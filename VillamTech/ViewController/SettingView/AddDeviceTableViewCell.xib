@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="216" id="KGk-i7-Jjw" customClass="AddDeviceTableViewCell" customModule="VillamTech" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chọn vườn rau" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yx-7V-FZg" customClass="DropDown" customModule="iOSDropDown">
+                        <rect key="frame" x="10" y="5" width="300" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="uuJ-3s-XsA"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mã thiết bị" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVA-a7-b8S">
+                        <rect key="frame" x="10" y="65" width="195" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YE2-FW-DgA">
+                        <rect key="frame" x="211" y="65" width="99" height="50"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="scanID:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RbB-c1-V4D"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cây" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YN3-e2-oy2">
+                        <rect key="frame" x="10" y="125" width="300" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJL-RX-PnQ">
+                        <rect key="frame" x="110" y="185" width="100" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="13W-Tu-0Ly"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="addTreeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4s8-Tg-7d0"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1yx-7V-FZg" secondAttribute="trailing" constant="10" id="5H4-17-bes"/>
+                    <constraint firstItem="1yx-7V-FZg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="CI1-Je-YsX"/>
+                    <constraint firstItem="YE2-FW-DgA" firstAttribute="width" secondItem="1yx-7V-FZg" secondAttribute="width" multiplier="0.33" id="IpX-Uw-r2R"/>
+                    <constraint firstItem="YN3-e2-oy2" firstAttribute="leading" secondItem="cVA-a7-b8S" secondAttribute="leading" id="L59-Ag-QiV"/>
+                    <constraint firstItem="JJL-RX-PnQ" firstAttribute="centerX" secondItem="YN3-e2-oy2" secondAttribute="centerX" id="MXo-mX-xI0"/>
+                    <constraint firstItem="cVA-a7-b8S" firstAttribute="top" secondItem="1yx-7V-FZg" secondAttribute="bottom" constant="10" id="VjQ-zq-Nlv"/>
+                    <constraint firstItem="1yx-7V-FZg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XlK-gX-Fq4"/>
+                    <constraint firstItem="JJL-RX-PnQ" firstAttribute="height" secondItem="YN3-e2-oy2" secondAttribute="height" id="c1q-CT-2yK"/>
+                    <constraint firstItem="YN3-e2-oy2" firstAttribute="top" secondItem="cVA-a7-b8S" secondAttribute="bottom" constant="10" id="fRS-jf-HIj"/>
+                    <constraint firstItem="YN3-e2-oy2" firstAttribute="trailing" secondItem="1yx-7V-FZg" secondAttribute="trailing" id="foJ-1X-yu1"/>
+                    <constraint firstItem="JJL-RX-PnQ" firstAttribute="top" secondItem="YN3-e2-oy2" secondAttribute="bottom" constant="10" id="jXY-VK-38p"/>
+                    <constraint firstItem="cVA-a7-b8S" firstAttribute="leading" secondItem="1yx-7V-FZg" secondAttribute="leading" id="kpK-2U-lxX"/>
+                    <constraint firstItem="YN3-e2-oy2" firstAttribute="height" secondItem="cVA-a7-b8S" secondAttribute="height" id="qNd-cS-2HD"/>
+                    <constraint firstItem="cVA-a7-b8S" firstAttribute="width" secondItem="1yx-7V-FZg" secondAttribute="width" multiplier="0.65" id="qbo-PT-5P5"/>
+                    <constraint firstItem="YE2-FW-DgA" firstAttribute="trailing" secondItem="1yx-7V-FZg" secondAttribute="trailing" id="qpS-Wc-4c1"/>
+                    <constraint firstItem="cVA-a7-b8S" firstAttribute="height" secondItem="1yx-7V-FZg" secondAttribute="height" id="vxZ-xT-fTU"/>
+                    <constraint firstItem="YE2-FW-DgA" firstAttribute="height" secondItem="1yx-7V-FZg" secondAttribute="height" id="xbr-8A-bx6"/>
+                    <constraint firstItem="YE2-FW-DgA" firstAttribute="top" secondItem="1yx-7V-FZg" secondAttribute="bottom" constant="10" id="zv0-ZZ-wu9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addBtn" destination="JJL-RX-PnQ" id="ap2-EB-qKl"/>
+                <outlet property="chooseGarden" destination="1yx-7V-FZg" id="L0Z-1p-WOa"/>
+                <outlet property="idDevice" destination="cVA-a7-b8S" id="RK6-gt-K4q"/>
+                <outlet property="scanID" destination="YE2-FW-DgA" id="Oij-Ce-8MM"/>
+                <outlet property="treeTf" destination="YN3-e2-oy2" id="Vra-LX-jnQ"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="187"/>
+        </tableViewCell>
+    </objects>
+</document>

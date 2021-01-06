@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="146" id="KGk-i7-Jjw" customClass="DeleteGardenTableViewCell" customModule="VillamTech" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYK-8v-AAA">
+                        <rect key="frame" x="110" y="65" width="100" height="50"/>
+                        <color key="backgroundColor" red="0.88014274839999995" green="0.078304730360000005" blue="0.2038950622" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="JAA-US-fMk"/>
+                        </constraints>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Zhf-sf-Jmt"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên vườn" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YR3-zl-zdX" customClass="DropDown" customModule="iOSDropDown">
+                        <rect key="frame" x="10" y="5" width="300" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="tRo-1V-dYb"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NYK-8v-AAA" firstAttribute="height" secondItem="YR3-zl-zdX" secondAttribute="height" id="KVR-eo-o4D"/>
+                    <constraint firstItem="NYK-8v-AAA" firstAttribute="top" secondItem="YR3-zl-zdX" secondAttribute="bottom" constant="10" id="LHo-SM-nDl"/>
+                    <constraint firstAttribute="trailing" secondItem="YR3-zl-zdX" secondAttribute="trailing" constant="10" id="PYP-ey-nWI"/>
+                    <constraint firstItem="NYK-8v-AAA" firstAttribute="centerX" secondItem="YR3-zl-zdX" secondAttribute="centerX" id="axP-uX-bwe"/>
+                    <constraint firstItem="YR3-zl-zdX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bDp-Ax-bZ0"/>
+                    <constraint firstItem="YR3-zl-zdX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="vPG-Pz-UzN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="deleteBtn" destination="NYK-8v-AAA" id="G4V-uQ-d5i"/>
+                <outlet property="gardenDropDown" destination="YR3-zl-zdX" id="C70-ua-Nvj"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="170.75892857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

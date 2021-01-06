@@ -3,29 +3,137 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F08EADA24E5481800045C10 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F08EAD924E5481800045C10 /* iOSDropDown.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8F08EADC24E8270600045C10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F08EADB24E8270600045C10 /* GoogleService-Info.plist */; };
+		8F1A1B24246CEEDD0008A39C /* DropDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A1B22246CEEDD0008A39C /* DropDeviceTableViewCell.swift */; };
+		8F1A1B25246CEEDD0008A39C /* DropDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A1B23246CEEDD0008A39C /* DropDeviceTableViewCell.xib */; };
+		8F1A1B27246D19330008A39C /* CustomTapgesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A1B26246D19330008A39C /* CustomTapgesture.swift */; };
+		8F1A1B2A246E36160008A39C /* ChinhSuaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A1B28246E36160008A39C /* ChinhSuaCell.swift */; };
+		8F1A1B2B246E36160008A39C /* ChinhSuaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A1B29246E36160008A39C /* ChinhSuaCell.xib */; };
+		8F261685244D395600067BFD /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F261684244D395600067BFD /* OptionTableViewCell.swift */; };
+		8F261687244D4CC000067BFD /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F261686244D4CC000067BFD /* CALayer.swift */; };
+		8F26168A244D9E6B00067BFD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F261689244D9E6B00067BFD /* SettingViewController.swift */; };
+		8F26168D244DB73400067BFD /* WifiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26168C244DB73400067BFD /* WifiViewController.swift */; };
+		8F261690244DB7A400067BFD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26168F244DB7A400067BFD /* UserViewController.swift */; };
+		8F2C054224234AAC00A0E6F7 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C054124234AAC00A0E6F7 /* LoginTableViewCell.swift */; };
+		8F2C054424234F4A00A0E6F7 /* RegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C054324234F4A00A0E6F7 /* RegisterTableViewCell.swift */; };
+		8F2EA95024343DA8008FF688 /* StickButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EA94F24343DA8008FF688 /* StickButton.swift */; };
+		8F362485243ECA3D0011125A /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F362484243ECA3D0011125A /* BaseNavigationViewController.swift */; };
+		8F362487243F13D60011125A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F362486243F13D60011125A /* View.swift */; };
+		8F3C26642460443300044597 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C26632460443300044597 /* ContainerViewController.swift */; };
+		8F3C26672462694700044597 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C26662462694700044597 /* MenuViewController.swift */; };
+		8F3C266A2462A96F00044597 /* HomeControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C26692462A96F00044597 /* HomeControllerDelegate.swift */; };
+		8F3C266C2462BA6E00044597 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C266B2462BA6E00044597 /* MenuTableViewCell.swift */; };
+		8F3C266E2462BEA500044597 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C266D2462BEA500044597 /* MenuOption.swift */; };
+		8F41BD62249216F90029A013 /* QRViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41BD61249216F90029A013 /* QRViewViewController.swift */; };
+		8F41BD64249217B30029A013 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41BD63249217B30029A013 /* QRScanViewController.swift */; };
+		8F41BD662492ED450029A013 /* Garden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41BD652492ED450029A013 /* Garden.swift */; };
+		8F5DF24D24DFF16800635C5C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5DF24C24DFF16800635C5C /* ExternalAccessory.framework */; };
+		8F5DF24F24DFF1F100635C5C /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DF24E24DFF1F100635C5C /* Wifi.swift */; };
+		8F6D810B248125390099B936 /* SelectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D810A248125380099B936 /* SelectBox.swift */; };
+		8F6D811024839D3C0099B936 /* TaoVuonRauTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D810E24839D3B0099B936 /* TaoVuonRauTableViewCell.swift */; };
+		8F6D811124839D3C0099B936 /* TaoVuonRauTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6D810F24839D3B0099B936 /* TaoVuonRauTableViewCell.xib */; };
+		8F6D81142483AA860099B936 /* AddDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D81122483AA860099B936 /* AddDeviceTableViewCell.swift */; };
+		8F6D81152483AA860099B936 /* AddDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6D81132483AA860099B936 /* AddDeviceTableViewCell.xib */; };
+		8F6D81182483B8420099B936 /* DeleteGardenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D81162483B8420099B936 /* DeleteGardenTableViewCell.swift */; };
+		8F6D81192483B8420099B936 /* DeleteGardenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6D81172483B8420099B936 /* DeleteGardenTableViewCell.xib */; };
+		8F6D811B2483DB130099B936 /* UIViewControllerExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D811A2483DB130099B936 /* UIViewControllerExtend.swift */; };
+		8F6D81312484E7170099B936 /* request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D81302484E7170099B936 /* request.swift */; };
+		8F6D81362484EC470099B936 /* LinkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D81352484EC470099B936 /* LinkAPI.swift */; };
+		8F7F1BAE24B03A420072768B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F1BAD24B03A420072768B /* Device.swift */; };
+		8F82E344247B6937000FCE56 /* DetailInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82E343247B6937000FCE56 /* DetailInformationViewController.swift */; };
+		8F82E346247BA9C1000FCE56 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82E345247BA9C1000FCE56 /* DetailTableViewCell.swift */; };
+		8F82E348247BC022000FCE56 /* optionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82E347247BC021000FCE56 /* optionDetail.swift */; };
+		8F82E34A247BC1EA000FCE56 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82E349247BC1EA000FCE56 /* SettingTableViewCell.swift */; };
+		8F83CC6724653FD40083CAF8 /* SlideSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F83CC6624653FD40083CAF8 /* SlideSetting.swift */; };
+		8F85EE3A243720650080D388 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85EE39243720650080D388 /* User.swift */; };
+		8F9D01352439BDD100416FE8 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D01342439BDD100416FE8 /* StoryBoard.swift */; };
+		8F9D01382439C16000416FE8 /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D01372439C16000416FE8 /* PlantViewController.swift */; };
+		8FC3429D2452DE070051DCC5 /* cellMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3429C2452DE070051DCC5 /* cellMenu.swift */; };
+		8FD313BE24480E9400867540 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD313BD24480E9400867540 /* DropdownButton.swift */; };
 		8FE96D55241F6D4100ACEAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE96D54241F6D4100ACEAD0 /* AppDelegate.swift */; };
 		8FE96D57241F6D4100ACEAD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE96D56241F6D4100ACEAD0 /* SceneDelegate.swift */; };
-		8FE96D59241F6D4100ACEAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE96D58241F6D4100ACEAD0 /* ViewController.swift */; };
 		8FE96D5C241F6D4100ACEAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE96D5A241F6D4100ACEAD0 /* Main.storyboard */; };
 		8FE96D5F241F6D4100ACEAD0 /* VillamTech.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FE96D5D241F6D4100ACEAD0 /* VillamTech.xcdatamodeld */; };
 		8FE96D61241F6D4600ACEAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE96D60241F6D4600ACEAD0 /* Assets.xcassets */; };
 		8FE96D64241F6D4600ACEAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE96D62241F6D4600ACEAD0 /* LaunchScreen.storyboard */; };
+		8FE96D6C241F704800ACEAD0 /* LoginRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE96D6B241F704800ACEAD0 /* LoginRegisterView.swift */; };
+		8FF8AC8F2421F13300D12BE9 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8AC8E2421F13300D12BE9 /* Button.swift */; };
+		8FF8AC912421F88400D12BE9 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8AC902421F88400D12BE9 /* Label.swift */; };
+		8FF8AC9524220F7500D12BE9 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8AC9424220F7500D12BE9 /* TextField.swift */; };
+		F86FCE2E04C02DADAAD04B80 /* Pods_VillamTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742C1DF963F6905CEC790A68 /* Pods_VillamTech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0F249B1AE89BACD3D906E4 /* Pods-VillamTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillamTech.debug.xcconfig"; path = "Target Support Files/Pods-VillamTech/Pods-VillamTech.debug.xcconfig"; sourceTree = "<group>"; };
+		64F68CC77E9C424B59FC7A50 /* Pods-VillamTech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillamTech.release.xcconfig"; path = "Target Support Files/Pods-VillamTech/Pods-VillamTech.release.xcconfig"; sourceTree = "<group>"; };
+		742C1DF963F6905CEC790A68 /* Pods_VillamTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VillamTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F08EAD924E5481800045C10 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F08EADB24E8270600045C10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F1A1B22246CEEDD0008A39C /* DropDeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		8F1A1B23246CEEDD0008A39C /* DropDeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDeviceTableViewCell.xib; sourceTree = "<group>"; };
+		8F1A1B26246D19330008A39C /* CustomTapgesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapgesture.swift; sourceTree = "<group>"; };
+		8F1A1B28246E36160008A39C /* ChinhSuaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinhSuaCell.swift; sourceTree = "<group>"; };
+		8F1A1B29246E36160008A39C /* ChinhSuaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChinhSuaCell.xib; sourceTree = "<group>"; };
+		8F261684244D395600067BFD /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		8F261686244D4CC000067BFD /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		8F261689244D9E6B00067BFD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		8F26168C244DB73400067BFD /* WifiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiViewController.swift; sourceTree = "<group>"; };
+		8F26168F244DB7A400067BFD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		8F2C054124234AAC00A0E6F7 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		8F2C054324234F4A00A0E6F7 /* RegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewCell.swift; sourceTree = "<group>"; };
+		8F2EA94F24343DA8008FF688 /* StickButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickButton.swift; sourceTree = "<group>"; };
+		8F362484243ECA3D0011125A /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		8F362486243F13D60011125A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		8F3C26632460443300044597 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		8F3C26662462694700044597 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8F3C26692462A96F00044597 /* HomeControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerDelegate.swift; sourceTree = "<group>"; };
+		8F3C266B2462BA6E00044597 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		8F3C266D2462BEA500044597 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		8F41BD61249216F90029A013 /* QRViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewViewController.swift; sourceTree = "<group>"; };
+		8F41BD63249217B30029A013 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		8F41BD652492ED450029A013 /* Garden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garden.swift; sourceTree = "<group>"; };
+		8F5DF24B24DFF16800635C5C /* VillamTech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VillamTech.entitlements; sourceTree = "<group>"; };
+		8F5DF24C24DFF16800635C5C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		8F5DF24E24DFF1F100635C5C /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
+		8F6D810A248125380099B936 /* SelectBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBox.swift; sourceTree = "<group>"; };
+		8F6D810C24812B540099B936 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6D810E24839D3B0099B936 /* TaoVuonRauTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaoVuonRauTableViewCell.swift; sourceTree = "<group>"; };
+		8F6D810F24839D3B0099B936 /* TaoVuonRauTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaoVuonRauTableViewCell.xib; sourceTree = "<group>"; };
+		8F6D81122483AA860099B936 /* AddDeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		8F6D81132483AA860099B936 /* AddDeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDeviceTableViewCell.xib; sourceTree = "<group>"; };
+		8F6D81162483B8420099B936 /* DeleteGardenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteGardenTableViewCell.swift; sourceTree = "<group>"; };
+		8F6D81172483B8420099B936 /* DeleteGardenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteGardenTableViewCell.xib; sourceTree = "<group>"; };
+		8F6D811A2483DB130099B936 /* UIViewControllerExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtend.swift; sourceTree = "<group>"; };
+		8F6D81302484E7170099B936 /* request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = request.swift; sourceTree = "<group>"; };
+		8F6D81352484EC470099B936 /* LinkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAPI.swift; sourceTree = "<group>"; };
+		8F7F1BAD24B03A420072768B /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		8F82E343247B6937000FCE56 /* DetailInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationViewController.swift; sourceTree = "<group>"; };
+		8F82E345247BA9C1000FCE56 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		8F82E347247BC021000FCE56 /* optionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionDetail.swift; sourceTree = "<group>"; };
+		8F82E349247BC1EA000FCE56 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		8F83CC6624653FD40083CAF8 /* SlideSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideSetting.swift; sourceTree = "<group>"; };
+		8F85EE39243720650080D388 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8F9D01342439BDD100416FE8 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
+		8F9D01372439C16000416FE8 /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
+		8FC3429C2452DE070051DCC5 /* cellMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellMenu.swift; sourceTree = "<group>"; };
+		8FD313BD24480E9400867540 /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
 		8FE96D51241F6D4100ACEAD0 /* VillamTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VillamTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE96D54241F6D4100ACEAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE96D56241F6D4100ACEAD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8FE96D58241F6D4100ACEAD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8FE96D5B241F6D4100ACEAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FE96D5E241F6D4100ACEAD0 /* VillamTech.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VillamTech.xcdatamodel; sourceTree = "<group>"; };
 		8FE96D60241F6D4600ACEAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FE96D63241F6D4600ACEAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FE96D65241F6D4600ACEAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE96D6B241F704800ACEAD0 /* LoginRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterView.swift; sourceTree = "<group>"; };
+		8FF8AC8E2421F13300D12BE9 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		8FF8AC902421F88400D12BE9 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		8FF8AC9424220F7500D12BE9 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +141,180 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F08EADA24E5481800045C10 /* iOSDropDown.framework in Frameworks */,
+				8F5DF24D24DFF16800635C5C /* ExternalAccessory.framework in Frameworks */,
+				F86FCE2E04C02DADAAD04B80 /* Pods_VillamTech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09CA6A28CF0BB0D541A72C06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A0F249B1AE89BACD3D906E4 /* Pods-VillamTech.debug.xcconfig */,
+				64F68CC77E9C424B59FC7A50 /* Pods-VillamTech.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		82AED85AB9CE267CEFB855BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F08EAD924E5481800045C10 /* iOSDropDown.framework */,
+				8F5DF24C24DFF16800635C5C /* ExternalAccessory.framework */,
+				8F6D810C24812B540099B936 /* iOSDropDown.framework */,
+				742C1DF963F6905CEC790A68 /* Pods_VillamTech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F261681244CA65C00067BFD /* OptionTable */ = {
+			isa = PBXGroup;
+			children = (
+				8F261684244D395600067BFD /* OptionTableViewCell.swift */,
+			);
+			path = OptionTable;
+			sourceTree = "<group>";
+		};
+		8F261688244D9E2400067BFD /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				8F261689244D9E6B00067BFD /* SettingViewController.swift */,
+				8F1A1B22246CEEDD0008A39C /* DropDeviceTableViewCell.swift */,
+				8F1A1B23246CEEDD0008A39C /* DropDeviceTableViewCell.xib */,
+				8F1A1B28246E36160008A39C /* ChinhSuaCell.swift */,
+				8F1A1B29246E36160008A39C /* ChinhSuaCell.xib */,
+				8F6D810E24839D3B0099B936 /* TaoVuonRauTableViewCell.swift */,
+				8F6D810F24839D3B0099B936 /* TaoVuonRauTableViewCell.xib */,
+				8F6D81122483AA860099B936 /* AddDeviceTableViewCell.swift */,
+				8F6D81132483AA860099B936 /* AddDeviceTableViewCell.xib */,
+				8F6D81162483B8420099B936 /* DeleteGardenTableViewCell.swift */,
+				8F6D81172483B8420099B936 /* DeleteGardenTableViewCell.xib */,
+				8F41BD61249216F90029A013 /* QRViewViewController.swift */,
+				8F41BD63249217B30029A013 /* QRScanViewController.swift */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		8F26168B244DB71C00067BFD /* WifiView */ = {
+			isa = PBXGroup;
+			children = (
+				8F26168C244DB73400067BFD /* WifiViewController.swift */,
+			);
+			path = WifiView;
+			sourceTree = "<group>";
+		};
+		8F26168E244DB78600067BFD /* TkView */ = {
+			isa = PBXGroup;
+			children = (
+				8F26168F244DB7A400067BFD /* UserViewController.swift */,
+			);
+			path = TkView;
+			sourceTree = "<group>";
+		};
+		8F362483243ECA020011125A /* BaseNavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F362484243ECA3D0011125A /* BaseNavigationViewController.swift */,
+			);
+			path = BaseNavigationViewController;
+			sourceTree = "<group>";
+		};
+		8F3C26652462693300044597 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8F3C26682462A93B00044597 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8F3C26692462A96F00044597 /* HomeControllerDelegate.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		8F6D812F2484E6870099B936 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8F6D81302484E7170099B936 /* request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8F6D81342484EC370099B936 /* SingleTon */ = {
+			isa = PBXGroup;
+			children = (
+				8F6D81352484EC470099B936 /* LinkAPI.swift */,
+			);
+			path = SingleTon;
+			sourceTree = "<group>";
+		};
+		8F82E342247B6902000FCE56 /* DetailPlantInfor */ = {
+			isa = PBXGroup;
+			children = (
+				8F82E343247B6937000FCE56 /* DetailInformationViewController.swift */,
+				8F82E345247BA9C1000FCE56 /* DetailTableViewCell.swift */,
+				8F82E349247BC1EA000FCE56 /* SettingTableViewCell.swift */,
+			);
+			path = DetailPlantInfor;
+			sourceTree = "<group>";
+		};
+		8F85EE38243720580080D388 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F7F1BAD24B03A420072768B /* Device.swift */,
+				8F85EE39243720650080D388 /* User.swift */,
+				8F3C266D2462BEA500044597 /* MenuOption.swift */,
+				8F83CC6624653FD40083CAF8 /* SlideSetting.swift */,
+				8F82E347247BC021000FCE56 /* optionDetail.swift */,
+				8F41BD652492ED450029A013 /* Garden.swift */,
+				8F5DF24E24DFF1F100635C5C /* Wifi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F9D01362439C0EF00416FE8 /* ControlView */ = {
+			isa = PBXGroup;
+			children = (
+				8F261681244CA65C00067BFD /* OptionTable */,
+				8F9D01372439C16000416FE8 /* PlantViewController.swift */,
+				8FC3429C2452DE070051DCC5 /* cellMenu.swift */,
+			);
+			path = ControlView;
+			sourceTree = "<group>";
+		};
+		8FC342992452DC470051DCC5 /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				8F3C26652462693300044597 /* New Group */,
+				8F3C26632460443300044597 /* ContainerViewController.swift */,
+				8F3C26662462694700044597 /* MenuViewController.swift */,
+				8F3C266B2462BA6E00044597 /* MenuTableViewCell.swift */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
+		8FD313BC24480E7600867540 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				8FF8AC8E2421F13300D12BE9 /* Button.swift */,
+				8FD313BD24480E9400867540 /* DropdownButton.swift */,
+				8F6D810A248125380099B936 /* SelectBox.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		8FE96D48241F6D4100ACEAD0 = {
 			isa = PBXGroup;
 			children = (
 				8FE96D53241F6D4100ACEAD0 /* VillamTech */,
 				8FE96D52241F6D4100ACEAD0 /* Products */,
+				09CA6A28CF0BB0D541A72C06 /* Pods */,
+				82AED85AB9CE267CEFB855BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +329,64 @@
 		8FE96D53241F6D4100ACEAD0 /* VillamTech */ = {
 			isa = PBXGroup;
 			children = (
-				8FE96D54241F6D4100ACEAD0 /* AppDelegate.swift */,
+				8F5DF24B24DFF16800635C5C /* VillamTech.entitlements */,
+				8F6D81342484EC370099B936 /* SingleTon */,
+				8F6D812F2484E6870099B936 /* Network */,
+				8F3C26682462A93B00044597 /* protocol */,
+				8F85EE38243720580080D388 /* Model */,
+				8FF8AC9224220BAE00D12BE9 /* ViewController */,
 				8FE96D56241F6D4100ACEAD0 /* SceneDelegate.swift */,
-				8FE96D58241F6D4100ACEAD0 /* ViewController.swift */,
-				8FE96D5A241F6D4100ACEAD0 /* Main.storyboard */,
+				8FE96D54241F6D4100ACEAD0 /* AppDelegate.swift */,
+				8FF8AC8D2421D68200D12BE9 /* supporter */,
 				8FE96D60241F6D4600ACEAD0 /* Assets.xcassets */,
+				8FE96D5A241F6D4100ACEAD0 /* Main.storyboard */,
 				8FE96D62241F6D4600ACEAD0 /* LaunchScreen.storyboard */,
+				8F08EADB24E8270600045C10 /* GoogleService-Info.plist */,
 				8FE96D65241F6D4600ACEAD0 /* Info.plist */,
 				8FE96D5D241F6D4100ACEAD0 /* VillamTech.xcdatamodeld */,
 			);
 			path = VillamTech;
+			sourceTree = "<group>";
+		};
+		8FF8AC8D2421D68200D12BE9 /* supporter */ = {
+			isa = PBXGroup;
+			children = (
+				8FD313BC24480E7600867540 /* Button */,
+				8FF8AC902421F88400D12BE9 /* Label.swift */,
+				8FF8AC9424220F7500D12BE9 /* TextField.swift */,
+				8F2EA94F24343DA8008FF688 /* StickButton.swift */,
+				8F9D01342439BDD100416FE8 /* StoryBoard.swift */,
+				8F362486243F13D60011125A /* View.swift */,
+				8F261686244D4CC000067BFD /* CALayer.swift */,
+				8F1A1B26246D19330008A39C /* CustomTapgesture.swift */,
+				8F6D811A2483DB130099B936 /* UIViewControllerExtend.swift */,
+			);
+			path = supporter;
+			sourceTree = "<group>";
+		};
+		8FF8AC9224220BAE00D12BE9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F82E342247B6902000FCE56 /* DetailPlantInfor */,
+				8FC342992452DC470051DCC5 /* Navi */,
+				8F26168E244DB78600067BFD /* TkView */,
+				8F26168B244DB71C00067BFD /* WifiView */,
+				8F261688244D9E2400067BFD /* SettingView */,
+				8F362483243ECA020011125A /* BaseNavigationViewController */,
+				8F9D01362439C0EF00416FE8 /* ControlView */,
+				8FF8AC9324220BC300D12BE9 /* LoginRegisterView */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8FF8AC9324220BC300D12BE9 /* LoginRegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				8FE96D6B241F704800ACEAD0 /* LoginRegisterView.swift */,
+				8F2C054124234AAC00A0E6F7 /* LoginTableViewCell.swift */,
+				8F2C054324234F4A00A0E6F7 /* RegisterTableViewCell.swift */,
+			);
+			path = LoginRegisterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FE96D68241F6D4600ACEAD0 /* Build configuration list for PBXNativeTarget "VillamTech" */;
 			buildPhases = (
+				BCC4242939C9BF3F3965B32A /* [CP] Check Pods Manifest.lock */,
 				8FE96D4D241F6D4100ACEAD0 /* Sources */,
 				8FE96D4E241F6D4100ACEAD0 /* Frameworks */,
 				8FE96D4F241F6D4100ACEAD0 /* Resources */,
+				A3B1A4EDE2AEECF7B6F2946E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,13 +449,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1A1B25246CEEDD0008A39C /* DropDeviceTableViewCell.xib in Resources */,
 				8FE96D64241F6D4600ACEAD0 /* LaunchScreen.storyboard in Resources */,
+				8F08EADC24E8270600045C10 /* GoogleService-Info.plist in Resources */,
+				8F1A1B2B246E36160008A39C /* ChinhSuaCell.xib in Resources */,
 				8FE96D61241F6D4600ACEAD0 /* Assets.xcassets in Resources */,
 				8FE96D5C241F6D4100ACEAD0 /* Main.storyboard in Resources */,
+				8F6D81192483B8420099B936 /* DeleteGardenTableViewCell.xib in Resources */,
+				8F6D81152483AA860099B936 /* AddDeviceTableViewCell.xib in Resources */,
+				8F6D811124839D3C0099B936 /* TaoVuonRauTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3B1A4EDE2AEECF7B6F2946E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VillamTech/Pods-VillamTech-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VillamTech/Pods-VillamTech-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VillamTech/Pods-VillamTech-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC4242939C9BF3F3965B32A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VillamTech-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FE96D4D241F6D4100ACEAD0 /* Sources */ = {
@@ -142,9 +511,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE96D5F241F6D4100ACEAD0 /* VillamTech.xcdatamodeld in Sources */,
-				8FE96D59241F6D4100ACEAD0 /* ViewController.swift in Sources */,
+				8F3C26642460443300044597 /* ContainerViewController.swift in Sources */,
+				8FF8AC8F2421F13300D12BE9 /* Button.swift in Sources */,
+				8F2EA95024343DA8008FF688 /* StickButton.swift in Sources */,
+				8F83CC6724653FD40083CAF8 /* SlideSetting.swift in Sources */,
+				8F261690244DB7A400067BFD /* UserViewController.swift in Sources */,
+				8F3C26672462694700044597 /* MenuViewController.swift in Sources */,
+				8F6D81312484E7170099B936 /* request.swift in Sources */,
+				8F5DF24F24DFF1F100635C5C /* Wifi.swift in Sources */,
+				8F261687244D4CC000067BFD /* CALayer.swift in Sources */,
+				8F1A1B27246D19330008A39C /* CustomTapgesture.swift in Sources */,
+				8F6D811024839D3C0099B936 /* TaoVuonRauTableViewCell.swift in Sources */,
+				8F362485243ECA3D0011125A /* BaseNavigationViewController.swift in Sources */,
+				8F6D81182483B8420099B936 /* DeleteGardenTableViewCell.swift in Sources */,
+				8FF8AC912421F88400D12BE9 /* Label.swift in Sources */,
+				8F9D01352439BDD100416FE8 /* StoryBoard.swift in Sources */,
+				8F9D01382439C16000416FE8 /* PlantViewController.swift in Sources */,
+				8F6D81362484EC470099B936 /* LinkAPI.swift in Sources */,
+				8FF8AC9524220F7500D12BE9 /* TextField.swift in Sources */,
+				8FD313BE24480E9400867540 /* DropdownButton.swift in Sources */,
+				8F3C266E2462BEA500044597 /* MenuOption.swift in Sources */,
+				8F6D810B248125390099B936 /* SelectBox.swift in Sources */,
+				8F7F1BAE24B03A420072768B /* Device.swift in Sources */,
+				8F82E34A247BC1EA000FCE56 /* SettingTableViewCell.swift in Sources */,
+				8F3C266A2462A96F00044597 /* HomeControllerDelegate.swift in Sources */,
+				8FC3429D2452DE070051DCC5 /* cellMenu.swift in Sources */,
+				8F41BD64249217B30029A013 /* QRScanViewController.swift in Sources */,
+				8F26168D244DB73400067BFD /* WifiViewController.swift in Sources */,
+				8F1A1B2A246E36160008A39C /* ChinhSuaCell.swift in Sources */,
 				8FE96D55241F6D4100ACEAD0 /* AppDelegate.swift in Sources */,
+				8F82E346247BA9C1000FCE56 /* DetailTableViewCell.swift in Sources */,
 				8FE96D57241F6D4100ACEAD0 /* SceneDelegate.swift in Sources */,
+				8F41BD662492ED450029A013 /* Garden.swift in Sources */,
+				8F41BD62249216F90029A013 /* QRViewViewController.swift in Sources */,
+				8FE96D6C241F704800ACEAD0 /* LoginRegisterView.swift in Sources */,
+				8F6D811B2483DB130099B936 /* UIViewControllerExtend.swift in Sources */,
+				8F2C054424234F4A00A0E6F7 /* RegisterTableViewCell.swift in Sources */,
+				8F82E348247BC022000FCE56 /* optionDetail.swift in Sources */,
+				8F82E344247B6937000FCE56 /* DetailInformationViewController.swift in Sources */,
+				8F2C054224234AAC00A0E6F7 /* LoginTableViewCell.swift in Sources */,
+				8F26168A244D9E6B00067BFD /* SettingViewController.swift in Sources */,
+				8F3C266C2462BA6E00044597 /* MenuTableViewCell.swift in Sources */,
+				8F261685244D395600067BFD /* OptionTableViewCell.swift in Sources */,
+				8F1A1B24246CEEDD0008A39C /* DropDeviceTableViewCell.swift in Sources */,
+				8F6D81142483AA860099B936 /* AddDeviceTableViewCell.swift in Sources */,
+				8F362487243F13D60011125A /* View.swift in Sources */,
+				8F85EE3A243720650080D388 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +698,10 @@
 		};
 		8FE96D69241F6D4600ACEAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A0F249B1AE89BACD3D906E4 /* Pods-VillamTech.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VillamTech/VillamTech.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3RYCBHXFY;
 				INFOPLIST_FILE = VillamTech/Info.plist;
@@ -295,7 +709,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.VillamTech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VillamTech.villamtech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,8 +718,10 @@
 		};
 		8FE96D6A241F6D4600ACEAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F68CC77E9C424B59FC7A50 /* Pods-VillamTech.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VillamTech/VillamTech.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3RYCBHXFY;
 				INFOPLIST_FILE = VillamTech/Info.plist;
@@ -313,7 +729,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.VillamTech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VillamTech.villamtech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

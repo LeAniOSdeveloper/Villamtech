@@ -12,7 +12,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+    func Login( token : String?  ){
+        let container = MainStoryBoard.instantiateViewController(identifier: "ContainerViewController") as! ContainerViewController
+        print(token)
+//        let nav = BaseNavigationViewController(rootViewController: plantView)
+        self.window?.rootViewController = container
+    }
+    func Logout(){
+        standardUserDefaults.removeObject(forKey: "token")
+        let login = MainStoryBoard.instantiateViewController(identifier: "LoginRegisterView")
+               self.window?.rootViewController = login
+    }
+    func changeview(identifier : String){
+        if let viewcontrol = MainStoryBoard.instantiateViewController(identifier: identifier) as? UIViewController{
+            let nav = BaseNavigationViewController(rootViewController: viewcontrol )
+            self.window?.rootViewController = nav
+        }
+    }
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
